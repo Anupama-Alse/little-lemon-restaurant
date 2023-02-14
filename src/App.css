@@ -36,3 +36,244 @@
     transform: rotate(360deg);
   }
 }
+div{
+  display:grid;
+     /* grid-template-areas: "header nav"
+     
+                          "description foodimage";
+                        */
+                        /* "footer footer";  */
+                        
+                         /* "testimonials testimonials testimonials",
+                       "about about",
+                         "navigation navigation navigation navigation"
+                         ; */   
+
+   /* grid-template-rows: auto auto auto auto; 
+   grid-template-columns:1fr auto ;  */
+   
+   /* grid-template-rows: 40px 1fr 2fr 40px ;  
+  grid-template-columns: 350px 5fr;    */
+}
+
+.gridd{
+  display:flex;
+  background-color: white; 
+  margin:0;
+  justify-content:space-between;  
+  padding-bottom:5px;
+  align-items: center;
+ 
+}
+.gridd img{
+  margin-left:10%;
+} 
+.gridd li{
+ display:inline-block;
+ padding:20px 10px;
+}
+.gridd ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  text-decoration:none;
+}
+li a{
+  text-decoration:none;
+  color:#6E6F6E;
+
+}
+h2{
+  margin-bottom:0;
+  margin-top:1%;
+}
+h4{
+  font-family: 'Markazi Text', serif;
+  font-size:40px;
+  font-weight: 400;
+  color: #f4ce14;
+  margin: 0;
+}
+
+button{
+  font-family: 'Karla', sans-serif;
+  font-size:16px;
+  color:black;
+  background-color:  #f4ce14;
+  font-weight: 600;
+  padding:15px;
+  border-style: none;
+  display:flex;
+  max-width:150px;
+  max-height:40px;
+  border-radius:16px;
+  align-items:center;
+}
+
+
+/* .card{
+  display:flex;
+  width:100%;
+  flex-direction:row;
+  margin-left: 50px;
+  justify-content: space-between;
+
+}
+.card1{
+  display:flex;
+  margin-left: 50px;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color:lightblue;
+ 
+} */
+.footer{
+
+  flex-direction: row;
+}
+
+
+
+.sub{
+  display:flex;
+  background-color:#6E6F6E;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+top: 0;
+right: 0;
+}
+
+.desc{
+  flex-direction:column;
+   justify-content:left;
+   /* padding-bottom:5%;
+   padding-left:5%; */
+   padding:2% 0 2% 5%;
+}
+
+.sub img{
+  display:inline-block;
+  max-width:450px;
+  max-height:320px;
+  border-radius: 16px;
+  position:absolute;
+  top:15%;
+  right:20%;
+}
+
+.desc h2{
+  font-family: 'Markazi Text', serif;
+  font-size:64px;
+  color: #f4ce14;
+  font-weight:500;
+}
+.desc h4{
+  color:white;
+}
+
+.desc p{
+  font-family: 'Karla', sans-serif;
+  font-size:16px;
+  color:white;
+}
+
+
+.specials{
+  display:'flex';
+  padding-top: 1%;
+  flex-direction: row;
+}
+
+.heading {
+     display:flex; 
+  font-family: 'Karla', sans-serif;
+  font-size:40px;
+  color:black;
+  justify-content: space-between;
+  align-items: center;
+  padding:2% 0 2% 5%;
+}
+.heading button{
+  padding:25px 32px;
+ margin-right:100px;
+}
+
+.card{
+  display:flex;
+  flex-direction:row;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  /* overflow-x: scroll; */
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  column-gap: 50px;
+  padding:2% 0 2% 5%;
+  width:100%;
+}
+
+.card1 {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   max-height:500px;
+   width:300px;
+
+  white-space: wrap;
+
+}
+.card1 img{
+
+  object-fit: cover;
+  border-top-left-radius:16px;
+  border-top-right-radius:16px;
+}
+
+.card1 .menu{
+  background-color: lightgrey;
+  padding:0 3%;
+}
+.footer{
+  display:flex;
+  background-color: lightgrey;
+}
+
+.customersay{
+  display:flex;
+  flex-wrap: wrap;
+}
+.he{
+  display:flex; 
+  font-family: 'Karla', sans-serif;
+  font-size:40px;
+  color:black;
+  justify-content: space-between;
+  align-items: center;
+  padding:2% 0 2% 5%;
+}
+.customers{
+  display:flex;
+  flex-direction:row;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  /* overflow-x: scroll; */
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  column-gap: 50px;
+  padding:2% 0 2% 5%;
+  width:100%;
+}
+.customer{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   max-height:500px;
+   width:300px;
+
+  white-space: wrap;
+}
+.bookingform{
+ display: grid;
+  max-width: 200px;
+   gap: 20px;
+}

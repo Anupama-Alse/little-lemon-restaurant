@@ -2,22 +2,29 @@ import React from 'react';
 import  './App.js';
 function Footer(){
     return(
-        <nav>
-            <table>
-        <ul style={{listStyleType:'none',
-                 }}>
-            
-            <thead>Doormat Navigation</thead>
-            <tr>Home</tr>
-            <tr>About</tr>
-            <tr>Menu</tr>
-            <tr>Reservations</tr>
-            <tr>Order Online</tr>
-            <tr>Login</tr>
-            
+        <footer class="footer">
+        <ul style={{ display:'inline',listStyleType:'none',}}>
+            <li>Doormat Navigation</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Reservations</li>
+            <li>Order Online</li>
+            <li>Login</li>
         </ul>
-        </table>
-        </nav>
+        <ul style={{ listStyleType:'none',}}>
+            <li>Contact</li>
+            <li>Address</li>
+            <li>Phone Number</li>
+            <li>Email</li>
+        </ul>
+        <ul style={{ listStyleType:'none',}}>
+            <li>Social media links</li>
+            <li>Address</li>
+            <li>Phone Number</li>
+            <li>Email</li>
+        </ul>
+        </footer>
        
     )
 }

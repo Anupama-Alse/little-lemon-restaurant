@@ -1,19 +1,15 @@
 
 import './App.css';
-import Header from './Header.js';
-import Nav from './Nav.js';
-import Main from './Main.js';
-import Footer from './Footer.js';
+import Nav from './Nav';
+import Routing from './Routing';
+import Footer from './Footer';
 function App() {
   return (
      <>
      
-     <Header/>
-      <Nav/>
-      <Footer/>
-     {/* 
-      <Main/>
-     */}
+    <Nav/>
+    <Routing/>
+    <Footer/>
       </>
   );
 }
