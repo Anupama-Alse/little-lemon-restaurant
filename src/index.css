@@ -595,7 +595,7 @@ input[type="submit"]:hover{
 
 
  .about-brief{
-   text-align:cneter;
+   text-align:center;
  }
  
  .about-img img{
@@ -606,11 +606,14 @@ input[type="submit"]:hover{
   width:35vw;
   
  }
- 
+ .aboutpage .about-title{
+  margin-left:20px;
+ }
 
  
  .footer{
  grid-template-columns: repeat(2,auto);
+ margin-left:20px;
  }
 }
  /* @keyframes slideDownFade {
