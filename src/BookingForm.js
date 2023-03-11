@@ -1,58 +1,50 @@
-import React,{useState,useReducer} from "react";
+import React from "react";
 import "./App.js";
-import Main from "./Main.js";
-import BookingPage from "./BookingPage.js";
-function BookingForm(props){
-
-    const [date,setDate]=useState();
-    const  [time,setTime]=useState(
-        props.availableTimes.map((options)=><option key={options.key}>{options.label}</option>)
-    );
+import  "./bookingform.css";
+import {FaUser} from 'react-icons/fa';
+function BookingForm(props,isSubmitted){
    
-               
+    
 
-   
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        setDate();
-        console.log("submitted");
-
-       
-    }
-     
-   
     return (
         <>
+        <section className="formsection">
 
-        <div className="bookingform">
-        <form onSubmit={handleSubmit} >
-        <fieldset>
+            <h3 style={{fontSize:"30px",color:"white"}}>Booking Form</h3> <span className="logged">{isSubmitted?<p style={{fontSize:"600"}}><FaUser/> {props.input} </p>:""}</span>
+        
+            <div className="bookingForm">
+        <form className="form" onSubmit={props.handleSubmit} >
+     
         <label htmlFor="res-date">Choose date</label>
         <input 
         type="date"
          id="res-date"
          placeholder="dd-mm-yyyy"
-         value={date}
+         value={props.date}
          date="res-date"
-         onChange={(e)=>setDate(e.target.value)}/>
+         min={props.today}
+         onChange={props.handleChange}
+         aria-label="date"
+         required/>
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time">
-        
-       
-       {time}
-       
+        <select id="res-time" aria-label="time"
+         onChange={props.handleChange}
+         required>
+        {props.availableTimes ? props.availableTimes.map((options, key) => <option key={key} value={options}>{options}</option>) : []}
         </select>
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder="1" min="1" max="10" id="guests"/>
-        <label htmlFor="occasion">Occasion</label>
-        <select id="occasion">
+        <input type="number" aria-label="guests" placeholder="1" min="1" max="10" id="guests" value={props.guests} onChange={props.handleChange} required/>
+        <label htmlFor="occasion" value={props.occasion} onChange={props.handleChange}>Occasion</label>
+        <select id="occasion" aria-label="occasion" value={props.occasion} onChange={props.handleChange}>
            <option>Birthday</option>
            <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation"/>
-        </fieldset>
+        <input className="submitbutton" type="submit" role="button" value="Make Your reservation"
+        disabled={!props.validation()}/>
+       
      </form>
      </div>
+     </section>
      </>
     )
 }

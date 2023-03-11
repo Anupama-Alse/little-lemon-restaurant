@@ -1,0 +1,61 @@
+input,label,select{
+    font-family: 'Karla';
+    font-size: 500;
+    
+    padding: 15px 40px;
+    text-align:center;
+    color:black;
+
+}
+label{
+    text-align:center;
+    font-weight:bolder;
+    color:white;
+    padding-bottom: 11px;
+}
+
+.form{
+    display:grid;
+    justify-content: center;
+    grid-template-rows: repeat(5,auto);
+   grid-template-columns: auto;
+    padding-bottom:7%;
+   
+  }
+ 
+.formsection {
+    z-index:100;
+    position:relative;
+     text-align: center;
+   
+background-image: url('./assets/restb.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+    padding-bottom: 40px;
+    justify-content: center;
+   opacity:2; 
+   
+   
+}
+
+
+
+.formsection> h3 {
+    font-family: 'Karla';
+    font-size:20px;
+    text-align: center;
+    padding-top: 20px;
+    margin:0;
+}
+.submitbutton{
+    background-color:#000000;
+    color:white;
+    border-radius:16px;
+}
+.submitbutton:hover{
+    background-color:#495E57;
+    color:white;
+    margin-top:20px;
+    border-radius:16px;
+    
+}

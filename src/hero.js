@@ -1,37 +1,32 @@
 import React from 'react';
 import './App.js';
 import restauranfood from'./restauranfood.jpg';
-import Specials from './Specials';
+import { useNavigate } from 'react-router-dom';
 function Hero(){
+    const navigate = useNavigate();
+
+  function handlebooking(event) {
+
+    navigate('/booking');
+  }
     return(
 
         <>
-        <main  className='sub'>
-
-        <description  
-        class="desc">
+        <section className='hero'>
+        <div class="desc-title">
         <h2>Little Lemon</h2>
         <h4>Chicago</h4>
-        <p>We are family owned <br/>
-   Mediterranean restaurant, <br/>
-   focused on traditional  <br/>
-   recipes served with a modern <br/>
+        <div className='desc-p'>
+        <p>We are family owned 
+   Mediterranean restaurant, 
+   focused on traditional  
+   recipes served with a modern 
    twist.</p>
-   <button
-    style={{
-   //   display:'flex',
-   //  maxWidth:'150px',
-   //  maxHeight:'40px',
-   //  borderRadius:'16px',
-   //  alignItems:'center'
-    }}>Reserve a table</button>
-   </description>
-   
-   <img src={restauranfood} alt="restaurant"  />
-   
-   </main>
-   <Specials/>
-   
+   </div>
+   <button onClick={handlebooking}>Reserve a table</button>
+   </div>
+   <img className="desc-img" src={restauranfood} alt="restaurant"  /> 
+   </section>
      </>
     )
 }
