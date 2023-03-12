@@ -430,18 +430,20 @@ justify-content:space-evenly;
   justify-content: center;
   justify-items: center;
   grid-template-rows: repeat(3,auto);
-  padding:2%;
+ 
 }
 
 input[type="text"],input[type="password"]{
   height:20px;
   border:1px solid black;
   margin-bottom:20px;
+  border-radius: 15px;
   
 }
+
 .input-container label{
   text-align: left;
-  color:white;
+  color:black;
 }
 .input-container {
   display: flex;
@@ -451,13 +453,14 @@ input[type="text"],input[type="password"]{
   font-size: larger;
   text-align: left;
   font-weight: bolder;
+
 }
 
 input[type="submit"]{
   color:white;
   margin-top:10px;
   cursor:pointer;
-  padding:10px 30px;
+  padding:10px 40px;
   background-color:#000000;
 }
 input[type="submit"]:hover{
@@ -591,12 +594,10 @@ input[type="submit"]:hover{
  .about{
    grid-template-columns:auto;
    justify-content: center;
+   margin:12px;
  }
 
 
- .about-brief{
-   text-align:center;
- }
  
  .about-img img{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -608,12 +609,13 @@ input[type="submit"]:hover{
  }
  .aboutpage .about-title{
   margin-left:20px;
+  margin-right: 20px;
  }
 
  
  .footer{
  grid-template-columns: repeat(2,auto);
- margin-left:20px;
+ margin-left:12px;
  }
 }
  /* @keyframes slideDownFade {

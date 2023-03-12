@@ -47,7 +47,7 @@ const ErrorMessage=(name)=>
  );
 
  const renderForm = (
-    <div className="loginform">
+    <div className="loginforms">
      <h1  style={{color:"white"}}>Login</h1>
       <form  style={{ display:'grid',
  justifyItems:'center',padding:"30px"}}onSubmit={handleSubmit}>
@@ -70,7 +70,7 @@ const ErrorMessage=(name)=>
 return(
 <>
 <Nav/>
-<div className="loginform" style={{padding:"14%"}}>
+<div className="loginform" style={{padding:"14%",textAlign:"center"}}>
 
 {isSubmitted ? <div >
  
