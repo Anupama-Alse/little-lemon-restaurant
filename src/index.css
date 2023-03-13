@@ -369,7 +369,7 @@ font-size: 22px;
   width:400px;
   display:block;
   text-align: left;
-  word-spacing: 12px;
+  word-spacing: 2px;
 }
 .about-img .about-restaurant:hover,.about-img .about-mario:hover{
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.4);
@@ -597,6 +597,11 @@ input[type="submit"]:hover{
    margin-left:20px;
  }
 
+ .about .about-brief{
+  margin: 20px 0px;
+  width: 300px;
+  font-size: 20px;
+ }
 
  .about-img img{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -609,6 +614,7 @@ input[type="submit"]:hover{
  .aboutpage .about-title{
   margin-left:25px;
   margin-right: 25px;
+  
  }
 
  
