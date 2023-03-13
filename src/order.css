@@ -55,6 +55,10 @@
         padding:0;
         margin:0;
     }
+    .add{
+        flex-direction: column;
+        gap:30px;
+    }
     .order-img{
         width:110px;
         height:110px;

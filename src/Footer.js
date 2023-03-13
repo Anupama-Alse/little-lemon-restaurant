@@ -27,7 +27,7 @@ function Footer(){
         <ul>
             <li>Follow our socials</li>
            
-            <div style={{display:"flex",gap:"30px",padding:"10px"}}>
+            <div style={{display:"flex",gap:"22px",padding:"10px"}}>
             <li><a href="mailto:someone@example.com"><FaEnvelope/></a></li>
             <li><a href="https://www.twitter.com"><FaTwitter/></a></li>
             <li><a href="https://www.instagram.com"><FaInstagram/></a></li>
