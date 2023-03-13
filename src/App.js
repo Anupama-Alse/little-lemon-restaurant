@@ -91,7 +91,6 @@ function handleInput(e){
         <Route path="/bookingconfirmed" 
         element={<ConfirmBooking date={date} time={time} guests={guests} occasion={occasion} />}></Route>
         <Route path='/login' element={<Login input={input} handleInput={handleInput} / >}></Route>
-        <Route path="*" element={<PageError />}></Route>
       </Routes>
   );
 }
